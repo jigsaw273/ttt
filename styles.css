@@ -1,28 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-body{
-   background-color: peru; 
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Lexend;
+    font-weight: 500;
+    user-select: none;
+    color: snow;
 }
 
-.cell{
+.cell {
     width: 75px;
     height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
+    background-color: rgb(25, 55, 46);
     line-height: 75px;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
+    color:rgb(206, 235, 226);
+    border-radius: 8px;
 }
 
-#board{
+.cell:hover {
+    background-color: rgb(37, 76, 64);
+  }
+
+#board {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto; 
+    width: 255px;
+    text-align: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+#gameContainer {
+    background-color:rgb(10, 28, 19);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
-#gameContainer{
-    background-color: cornsilk;
-    text-align: center;
+#restartBtn {
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(189, 239, 221);
+    color: black;
 }
-
